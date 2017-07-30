@@ -1,0 +1,38 @@
+.close {
+	margin: -67px -50px 0px 0px;
+	color: black !important;
+}
+
+.channel {
+	margin: 8px;
+	border: 4px solid #d96f32;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	padding: 3px;
+	background: #092b40;
+	text-align: left;
+	color: #ddd;
+}
+
+.channel a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.connected_false {
+	background: #333;
+}
+
+.media-body {
+	padding-left: 10px;
+}
+
+.logo {
+	height: 80px;
+	margin: 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
