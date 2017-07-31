@@ -17,13 +17,9 @@ class TwitchAccounts extends Component {
 			APIerror: false,
 			errorMessage: '',
 			showWarning: false,
-			showOnline: true,
-			showOffline: true
+			show: 'all'
 		};
 		this.getAccountsInfo = this.getAccountsInfo.bind(this);
-		this.showOnline = this.showOnline.bind(this);
-		this.showOffline = this.showOffline.bind(this);
-		this.showAllAccounts = this.showAllAccounts.bind(this);
 		this.deleteAccount = this.deleteAccount.bind(this);
 	}
 
@@ -43,20 +39,7 @@ class TwitchAccounts extends Component {
 		]);
 	}
 
-	showOnline() {
-		this.setState({ showOnline: true, showOffline: false });
-	}
-
-	showOffline() {
-		this.setState({ showOnline: false, showOffline: true });
-	}
-
-	showAllAccounts() {
-		this.setState({ showOnline: true, showOffline: true });
-	}
-
 	deleteAccount(account, connected) {
-		console.log('Deleting... ' + account.toLowerCase());
 		let accounts = this.state.accounts.slice();
 		let accountsInfo = this.state.accountsInfo.slice();
 		const index = accounts.indexOf(account.toLowerCase());
@@ -161,7 +144,7 @@ class TwitchAccounts extends Component {
 		} else {
 			let twitchCards = [];
 			this.state.accountsInfo.forEach((account, index) => {
-				if (account.connected && this.state.showOnline) {
+				if (account.connected && this.state.show !== 'offline') {
 					twitchCards.unshift(
 						<TwitchCard
 							key={index}
@@ -170,7 +153,7 @@ class TwitchAccounts extends Component {
 							delete={this.deleteAccount}
 						/>
 					);
-				} else if (!account.connected && this.state.showOffline) {
+				} else if (!account.connected && this.state.show !== 'online') {
 					twitchCards.push(
 						<TwitchCard
 							key={index}
@@ -187,9 +170,10 @@ class TwitchAccounts extends Component {
 						{this.state.errorMessage}
 					</Alert>
 					<ButtonBar
-						all={this.showAllAccounts}
-						online={this.showOnline}
-						offline={this.showOffline}
+						current={this.state.show}
+						all={() => this.setState({ show: 'all' })}
+						online={() => this.setState({ show: 'online' })}
+						offline={() => this.setState({ show: 'offline' })}
 					/>
 					<SearchBar onSubmission={this.getAccountsInfo} />
 					<div id="channels">

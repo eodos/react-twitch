@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Input } from 'reactstrap';
+import { Row, Col, Input } from 'reactstrap';
 import './SearchBar.css';
 
 class SearchBar extends Component {
@@ -25,13 +25,17 @@ class SearchBar extends Component {
 
 	render() {
 		return (
-			<Input
-				className="SearchBar"
-				id="input"
-				type="text"
-				placeholder="Add account ..."
-				onKeyDown={this.handleKeyDown}
-			/>
+			<Row>
+				<Col md={{ size: 8, offset: 2 }}>
+					<Input
+						className="SearchBar"
+						id="input"
+						type="text"
+						placeholder="Add account ..."
+						onKeyDown={this.handleKeyDown}
+					/>
+				</Col>
+			</Row>
 		);
 	}
 }

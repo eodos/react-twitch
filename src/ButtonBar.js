@@ -5,13 +5,25 @@ class ButtonBar extends Component {
 	render() {
 		return (
 			<ButtonGroup>
-				<Button onClick={this.props.all} color="primary">
+				<Button
+					active={this.props.current === 'all'}
+					onClick={this.props.all}
+					color="primary"
+				>
 					All
 				</Button>
-				<Button onClick={this.props.online} color="success">
+				<Button
+					active={this.props.current === 'online'}
+					onClick={this.props.online}
+					color="success"
+				>
 					Online
 				</Button>{' '}
-				<Button onClick={this.props.offline} color="danger">
+				<Button
+					active={this.props.current === 'offline'}
+					onClick={this.props.offline}
+					color="danger"
+				>
 					Offline
 				</Button>
 			</ButtonGroup>
