@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.dd1a1754.css",
-  "main.css.map": "static/css/main.dd1a1754.css.map",
-  "main.js": "static/js/main.73f8dafc.js",
-  "main.js.map": "static/js/main.73f8dafc.js.map"
+  "main.css": "/react-twitch/static/css/main.1eeaeedb.chunk.css",
+  "main.js": "/react-twitch/static/js/main.cbce3263.chunk.js",
+  "main.js.map": "/react-twitch/static/js/main.cbce3263.chunk.js.map",
+  "static/css/1.3653b804.chunk.css": "/react-twitch/static/css/1.3653b804.chunk.css",
+  "static/js/1.9093b22e.chunk.js": "/react-twitch/static/js/1.9093b22e.chunk.js",
+  "static/js/1.9093b22e.chunk.js.map": "/react-twitch/static/js/1.9093b22e.chunk.js.map",
+  "runtime~main.js": "/react-twitch/static/js/runtime~main.1eac23d9.js",
+  "runtime~main.js.map": "/react-twitch/static/js/runtime~main.1eac23d9.js.map",
+  "static/css/1.3653b804.chunk.css.map": "/react-twitch/static/css/1.3653b804.chunk.css.map",
+  "static/css/main.1eeaeedb.chunk.css.map": "/react-twitch/static/css/main.1eeaeedb.chunk.css.map",
+  "index.html": "/react-twitch/index.html",
+  "precache-manifest.04c347a3e518c7235fcef975a7d6de70.js": "/react-twitch/precache-manifest.04c347a3e518c7235fcef975a7d6de70.js",
+  "service-worker.js": "/react-twitch/service-worker.js"
 }
