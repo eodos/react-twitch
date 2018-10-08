@@ -4,22 +4,22 @@
   "homepage": "https://eodos.github.io/react-twitch",
   "private": true,
   "dependencies": {
-    "axios": ">0.16.2",
-    "bootstrap": ">4.0.0-alpha.6",
+    "axios": ">=0.16.2",
+    "bootstrap": ">=4.0.0-alpha.6",
     "eslint": "5.6.0",
-    "eslint-config-airbnb": ">17.1.0",
-    "eslint-plugin-import": ">2.14.0",
-    "eslint-plugin-jsx-a11y": ">6.1.1",
-    "eslint-plugin-react": ">7.11.1",
+    "eslint-config-airbnb": ">=17.1.0",
+    "eslint-plugin-import": ">=2.14.0",
+    "eslint-plugin-jsx-a11y": ">=6.1.1",
+    "eslint-plugin-react": ">=7.11.1",
     "prop-types": "^15.6.2",
     "react": "^16.0.0",
-    "react-addons-css-transition-group": "^15.6.0",
-    "react-addons-transition-group": "^15.6.0",
-    "react-dom": ">15.6.1",
-    "react-md-spinner": ">0.2.5",
-    "react-scripts": ">1.0.10",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-addons-transition-group": "^15.6.2",
+    "react-dom": ">=15.6.2",
+    "react-md-spinner": ">=0.2.5",
+    "react-scripts": ">=1.0.10",
     "react-transition-group": "^2.5.0",
-    "reactstrap": ">4.8.0",
+    "reactstrap": ">=4.8.0",
     "shortid": "^2.2.13"
   },
   "scripts": {
@@ -31,12 +31,20 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "gh-pages": ">1.0.0"
+    "gh-pages": ">=1.0.0"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "guppy": {
+    "id": "react-twitch",
+    "name": "react-twitch",
+    "type": "create-react-app",
+    "color": "#C51162",
+    "icon": null,
+    "createdAt": 1538957609367
+  }
 }
